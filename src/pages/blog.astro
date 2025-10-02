@@ -1,16 +1,24 @@
 ---
 import Footer from "../components/footer.astro";
 import Navigation from "../components/navigation.astro";
+import "../styles/global.css";
 ---
 
-<body>
-	<Navigation />
-	<h1>Sobre mim</h1>
-	<p>eu sou o josé.</p>
-	<ul>
-		<li><a href="/posts/post-1/">Post 1</a></li>
-		<li><a href="/posts/post-2/">Post 2</a></li>
-		<li><a href="/posts/post-3/">Post 3</a></li>
-	</ul>
-	<Footer />
-</body>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{"Blog"}</title>
+	</head>
+	<body>
+		<Navigation />
+		<h1>Sobre mim</h1>
+		<p>eu sou o josé.</p>
+		<ul>
+			<li><a href="/posts/post-1/">Post 1</a></li>
+			<li><a href="/posts/post-2/">Post 2</a></li>
+			<li><a href="/posts/post-3/">Post 3</a></li>
+		</ul>
+		<Footer />
+	</body>
+</html>
