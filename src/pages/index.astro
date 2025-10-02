@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/base.astro";
+import Greeting from '../components/greeting';
 ---
 
 <Layout title="Página principal">
 	<h1>meu site astro fodinha</h1>
+	<Greeting client:load messages={['Olá', 'Oi', 'Salve', 'E aí']} />
 </Layout>
