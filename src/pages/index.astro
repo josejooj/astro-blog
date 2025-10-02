@@ -1,23 +1,7 @@
 ---
-import Footer from "../components/footer.astro";
-import Header from "../components/header.astro";
-import "../styles/global.css";
+import Layout from "../layouts/base.astro";
 ---
 
-<html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<Header />
-		<h1>meu site astro fodinha</h1>
-		<Footer />
-		<script>
-			import '../scripts/menu.js';
-		</script>
-	</body>
-</html>
+<Layout title="Página principal">
+	<h1>meu site astro fodinha</h1>
+</Layout>
