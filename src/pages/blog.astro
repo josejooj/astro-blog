@@ -9,7 +9,7 @@ const allPosts = Object.values(import.meta.glob("./posts/*.md", { eager: true })
 	<h1>Sobre mim</h1>
 	<p>eu sou o josé.</p>
 	<ul>
-		{allPosts.map((post: any) => <PostButton title={post.frontmatter.title} url={post.url} />)}
+		{allPosts.map((post: any) => <PostButton title={post.frontmatter.title} url={post.url} created={post.frontmatter.pubDate} />)}
 	</ul>
 	<script>
 		import "../scripts/menu.js";
