@@ -5,7 +5,8 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
     server: {
         port: 80,
-        host: true
+        host: true,
+        allowedHosts: ["josejooj-astroblog.squareweb.app"]
     },
     prefetch: {
         defaultStrategy: "viewport",
