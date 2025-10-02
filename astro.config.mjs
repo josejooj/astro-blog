@@ -16,7 +16,7 @@ export default defineConfig({
       prefetchAll: true
   },
 
-  site: "josejooj-astroblog.squareweb.app",
+  site: "https://josejooj-astroblog.squareweb.app",
 
   integrations: [preact()]
 });
